@@ -3,26 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "description": "Starter template to get up and running quickly with Vue and Storybook",
-  "author": "Chromatic <https://chromatic.com/>",
+  "bugs": {
+    "url": "https://github.com/chromaui/intro-storybook-vue-template/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/chromaui/intro-storybook-vue-template"
   },
-  "bugs": {
-    "url": "https://github.com/chromaui/intro-storybook-vue-template/issues"
-  },
   "license": "MIT",
+  "author": "Chromatic <https://chromatic.com/>",
   "scripts": {
-    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint",
-    "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "init-msw": "msw init public/"
+    "chromatic": "chromatic --project-token=38a094e2b223",
+    "init-msw": "msw init public/",
+    "lint": "vue-cli-service lint",
+    "serve": "vue-cli-service serve",
+    "storybook": "start-storybook -p 6006",
+    "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
-    "chromatic": "^6.9.0",
     "core-js": "^3.8.3",
     "vue": "^3.2.13"
   },
@@ -46,6 +46,7 @@
     "@vue/vue3-jest": "^27.0.0-alpha.1",
     "babel-jest": "^27.0.6",
     "babel-loader": "^8.2.5",
+    "chromatic": "^6.9.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "jest": "^27.0.5",
